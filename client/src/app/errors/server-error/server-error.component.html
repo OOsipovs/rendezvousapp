@@ -1,1 +1,10 @@
-<p>server-error works!</p>
+<h4>Internal sesrver error - refreshing the page will make an error disappear</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <ol>
+        <li>Open chrome dev tools! </li>
+    </ol>
+    <code class="mt-5" style="background-color: whitesmoke;">
+        {{error.details}}
+    </code>
+</ng-container>
